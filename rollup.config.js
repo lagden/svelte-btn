@@ -21,7 +21,7 @@ export default {
 		}
 	],
 	plugins: [
-		svelte(),
-		resolve()
+		resolve(),
+		svelte()
 	]
 }
