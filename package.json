@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/svelte-btn",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Svelte component",
   "author": "Thiago Lagden",
   "license": "MIT",
@@ -22,16 +22,15 @@
     "README.md"
   ],
   "svelte": "src/index.svelte",
-  "module": "dist/index.mjs",
-  "main": "dist/index.js",
+  "main": "src/index.svelte",
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "rollup": "1.26.3",
+    "rollup": "1.27.9",
     "rollup-plugin-node-resolve": "5.2.0",
-    "rollup-plugin-svelte": "5.1.0",
-    "svelte": "3.12.1"
+    "rollup-plugin-svelte": "5.1.1",
+    "svelte": "3.16.3"
   }
 }

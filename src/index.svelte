@@ -2,6 +2,8 @@
 	import {filterProps} from './common.js'
 	import rippleAnimation from './ripple.js'
 
+	export let btnNode = null
+
 	let className = ''
 	export {className as class}
 
@@ -22,7 +24,7 @@
 	}
 </script>
 
-<button use:init on:click class="_btn {className}" {...props}>
+<button use:init on:click bind:this={btnNode} class="_btn {className}" {...props}>
 	<slot />
 	<div class="_btn__ripple {_btn__ripple__base}"></div>
 </button>
