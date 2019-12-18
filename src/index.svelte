@@ -40,6 +40,8 @@
 		--button-font-size: 1em;
 		--button-ripple-color: hsl(var(--hue), 100%, 100%);
 		--button-text-color: hsl(var(--hue), 100%, 100%);
+		--button-padding: 0.8em 1em;
+		--button-min-width: auto;
 	}
 
 	._btn {
@@ -53,9 +55,10 @@
 		cursor: pointer;
 		font-size: var(--button-font-size);
 		font-weight: 300;
+		min-width: var(--button-min-width);
 		outline: 0;
 		overflow: hidden;
-		padding: 0.8em 4em;
+		padding: var(--button-padding);
 		position: relative;
 	}
 
