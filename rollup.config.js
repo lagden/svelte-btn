@@ -1,5 +1,5 @@
+import resolve from '@rollup/plugin-node-resolve'
 import svelte from 'rollup-plugin-svelte'
-import resolve from 'rollup-plugin-node-resolve'
 import pkg from './package.json'
 
 const name = pkg.name
