@@ -16,8 +16,8 @@
 
 <style>
 	:root {
-		--btn-ripple-hue: 0;
-		--btn-ripple-background-color: hsl(var(--btn-ripple-hue), 0%, 47%);
+		--btn-ripple-hue: 210;
+		--btn-ripple-background-color: hsl(var(--btn-ripple-hue), 50%, 50%);
 		--btn-ripple-background-image: none;
 		--btn-ripple-border-radius: 0.15em;
 		--btn-ripple-box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
