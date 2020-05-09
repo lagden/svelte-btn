@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Btn should match snapshot 1`] = `
+<body>
+  <div>
+    <button
+      class="_tadashi_svelte_btn snapshot svelte-1x8vo3w"
+    >
+      <div
+        class="_tadashi_svelte_btn_slot svelte-1x8vo3w"
+      />
+       
+      <svg
+        class="_tadashi_svelte_btn__ripple svelte-1x8vo3w"
+        viewBox="0 0 600 600"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          class="svelte-1x8vo3w"
+          cx="300"
+          cy="300"
+          r="300"
+        />
+      </svg>
+    </button>
+  </div>
+</body>
+`;
