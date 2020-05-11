@@ -3,7 +3,7 @@
 <script>
 	import {filterProps} from './common.js'
 
-	export let btnNode
+	export let btnNode = undefined
 
 	let className = ''
 	export {className as class}
