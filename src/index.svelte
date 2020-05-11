@@ -1,7 +1,9 @@
+<svelte:options accessors />
+
 <script>
 	import {filterProps} from './common.js'
 
-	export let btnNode = null
+	export let btnNode
 
 	let className = ''
 	export {className as class}
