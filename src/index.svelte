@@ -12,7 +12,10 @@
 </script>
 
 <button class="_tadashi_svelte_btn {className}" bind:this={btnNode} on:click {...props}>
-	<div class="_tadashi_svelte_btn_slot"><slot /></div>
+	<div class="_tadashi_svelte_btn_slot">
+		<span class="_tadashi_svelte_btn_slot_workaround">&#32;</span>
+		<slot />
+	</div>
 	<svg class="_tadashi_svelte_btn__ripple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><circle cx="300" cy="300" r="300" /></svg>
 </button>
 
@@ -37,6 +40,7 @@
 		--tadashi-svelte-btn-ripple-duration: 0.4s;
 		--tadashi-svelte-btn-ripple-width: 100%;
 		--tadashi-svelte-btn-opacity-duration: 1s;
+		--tadashi-svelte-btn-slot-justify-content: center;
 	}
 
 	._tadashi_svelte_btn {
@@ -66,6 +70,12 @@
 	._tadashi_svelte_btn_slot {
 		display: flex;
 		align-items: center;
+		justify-content: var(--tadashi-svelte-btn-slot-justify-content);
+	}
+
+	._tadashi_svelte_btn_slot_workaround {
+		overflow: hidden;
+		width: 0px;
 	}
 
 	._tadashi_svelte_btn__ripple {

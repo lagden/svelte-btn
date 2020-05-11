@@ -4,19 +4,24 @@ exports[`Btn should match snapshot 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn snapshot svelte-1x8vo3w"
+      class="_tadashi_svelte_btn snapshot svelte-15vprr5"
     >
       <div
-        class="_tadashi_svelte_btn_slot svelte-1x8vo3w"
-      />
+        class="_tadashi_svelte_btn_slot svelte-15vprr5"
+      >
+        <span
+          class="_tadashi_svelte_btn_slot_workaround svelte-15vprr5"
+        />
+         
+      </div>
        
       <svg
-        class="_tadashi_svelte_btn__ripple svelte-1x8vo3w"
+        class="_tadashi_svelte_btn__ripple svelte-15vprr5"
         viewBox="0 0 600 600"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="svelte-1x8vo3w"
+          class="svelte-15vprr5"
           cx="300"
           cy="300"
           r="300"
