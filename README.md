@@ -22,7 +22,7 @@ $ npm i -S @tadashi/svelte-btn
 
 ## Usage
 
-You can see an example more complex here: https://svelte.dev/repl/f8ab96519a874208be8e3f6295d040b0?version=3.12.1
+You can see an example more complex here: https://svelte.dev/repl/f8ab96519a874208be8e3f6295d040b0?version=3.22.2
 
 ```html
 <script>

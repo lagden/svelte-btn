@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/svelte-btn",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Svelte component",
   "author": "Thiago Lagden",
   "license": "MIT",
@@ -21,7 +21,6 @@
     "dist",
     "README.md"
   ],
-  "module": "dist/index.mjs",
   "svelte": "src/index.svelte",
   "main": "src/index.svelte",
   "scripts": {
