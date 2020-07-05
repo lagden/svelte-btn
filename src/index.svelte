@@ -1,21 +1,26 @@
 <svelte:options accessors />
 
 <script>
-	import {filterProps} from './common.js'
+	import {filterProps} from './common'
 
 	export let btnNode = undefined
+	export let disabled = false
 
 	let className = ''
 	export {className as class}
 
-	const props = filterProps($$props, ['class'])
+	const props = filterProps($$props, ['class', 'disabled'])
 </script>
 
-<button class="_tadashi_svelte_btn {className}" bind:this={btnNode} on:click {...props}>
-	<div class="_tadashi_svelte_btn_slot">
-		<span class="_tadashi_svelte_btn_slot_workaround">&#32;</span>
-		<slot />
-	</div>
+<button
+	class="_tadashi_svelte_btn {className}"
+	bind:this={btnNode}
+	on:click
+	{disabled}
+	{...props}
+>
+	<span class="_tadashi_svelte_btn_slot_workaround">&#32;</span>
+	<slot />
 	<svg class="_tadashi_svelte_btn__ripple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><circle cx="300" cy="300" r="300" /></svg>
 </button>
 
@@ -44,6 +49,7 @@
 	}
 
 	._tadashi_svelte_btn {
+		align-items: center;
 		background-color: var(--tadashi-svelte-btn-background-color);
 		background-image: var(--tadashi-svelte-btn-background-image);
 		border: var(--tadashi-svelte-btn-border);
@@ -52,9 +58,11 @@
 		box-sizing: border-box;
 		color: var(--tadashi-svelte-btn-text-color);
 		cursor: var(--tadashi-svelte-btn-cursor);
+		display: inline-flex;
 		font-size: var(--tadashi-svelte-btn-font-size);
 		font-weight: var(--tadashi-svelte-btn-font-size);
 		height: var(--tadashi-svelte-btn-height);
+		justify-content: var(--tadashi-svelte-btn-slot-justify-content);
 		min-width: var(--tadashi-svelte-btn-min-width);
 		outline: var(--tadashi-svelte-btn-outline);
 		overflow: hidden;
@@ -62,20 +70,14 @@
 		position: relative;
 	}
 
-	._tadashi_svelte_btn:disabled {
-		cursor: not-allowed;
-		opacity: var(--tadashi-svelte-btn-disabled);
-	}
-
-	._tadashi_svelte_btn_slot {
-		display: flex;
-		align-items: center;
-		justify-content: var(--tadashi-svelte-btn-slot-justify-content);
-	}
-
 	._tadashi_svelte_btn_slot_workaround {
 		overflow: hidden;
 		width: 0px;
+	}
+
+	._tadashi_svelte_btn:disabled {
+		cursor: not-allowed;
+		opacity: var(--tadashi-svelte-btn-disabled);
 	}
 
 	._tadashi_svelte_btn__ripple {
@@ -92,12 +94,12 @@
 		will-change: transform, opacity;
 	}
 
-	._tadashi_svelte_btn:active {
+	._tadashi_svelte_btn:not(:disabled):active {
 		background-color: var(--tadashi-svelte-btn-background-color);
 		background-image: var(--tadashi-svelte-btn-background-image);
 	}
 
-	._tadashi_svelte_btn:active > ._tadashi_svelte_btn__ripple {
+	._tadashi_svelte_btn:not(:disabled):active > ._tadashi_svelte_btn__ripple {
 		transform: translate(-50%, -50%) scale(0);
 		opacity: 1;
 		transition: 0s;
