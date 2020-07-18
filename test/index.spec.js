@@ -6,7 +6,7 @@ describe('Btn', () => {
 	afterEach(cleanup)
 
 	test('find svg ripple', () => {
-		const {getByText} = render(Btn, {class: 'customCss'})
+		const {getByText} = render(Btn, {props: {class: 'customCss'}})
 		const svg = document.querySelector('svg')
 		expect(svg).not.toBeNull();
 	})
