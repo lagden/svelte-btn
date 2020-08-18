@@ -8,8 +8,12 @@
  * @return {object} Retorna um objeto filtrado
  */
 export function filterProps(props, reserved = []) {
-	return Object.keys(props).reduce((acc, cur) => {
-		const isTrue = cur.includes('$$') || cur.includes('Class') || reserved.includes(cur)
-		return isTrue ? acc : {...acc, [cur]: props[cur]}
-	}, {})
+	let result = {}
+	for (const prop of Object.keys(props)) {
+		const validate = prop.includes('$$') || prop.includes('Class') || reserved.includes(prop)
+		if (validate === false) {
+			result = {...result, [prop]: props[prop]}
+		}
+	}
+	return result
 }
