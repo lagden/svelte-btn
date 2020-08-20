@@ -6,17 +6,18 @@ describe('Btn', () => {
 	afterEach(cleanup)
 
 	test('find svg ripple', () => {
-		const {getByText} = render(Btn, {props: {class: 'customCss'}})
+		const {getByText} = render(Btn, {
+			props: {
+				class: 'customCss',
+				disabled: true
+			}
+		})
 		const svg = document.querySelector('svg')
 		expect(svg).not.toBeNull();
 	})
 
 	test('should match snapshot', () => {
-		const {container} = render(Btn, {
-			props: {
-				class: 'snapshot'
-			}
-		})
+		const {container} = render(Btn)
 		expect(container).toMatchSnapshot()
 	})
 

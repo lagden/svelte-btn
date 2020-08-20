@@ -4,20 +4,16 @@ exports[`Btn should match snapshot 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn snapshot svelte-1k85n1w"
+      class="_tadashi_svelte_btn svelte-rgbdu8"
     >
-      <span
-        class="_tadashi_svelte_btn_slot_workaround svelte-1k85n1w"
-      />
-       
        
       <svg
-        class="_tadashi_svelte_btn__ripple svelte-1k85n1w"
+        class="_tadashi_svelte_btn__ripple svelte-rgbdu8"
         viewBox="0 0 600 600"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="svelte-1k85n1w"
+          class="svelte-rgbdu8"
           cx="300"
           cy="300"
           r="300"
@@ -32,21 +28,17 @@ exports[`Btn should match snapshot with slot 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn svelte-1k85n1w"
+      class="_tadashi_svelte_btn svelte-rgbdu8"
     >
-      <span
-        class="_tadashi_svelte_btn_slot_workaround svelte-1k85n1w"
-      />
-       
       xxx
        
       <svg
-        class="_tadashi_svelte_btn__ripple svelte-1k85n1w"
+        class="_tadashi_svelte_btn__ripple svelte-rgbdu8"
         viewBox="0 0 600 600"
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle
-          class="svelte-1k85n1w"
+          class="svelte-rgbdu8"
           cx="300"
           cy="300"
           r="300"

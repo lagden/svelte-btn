@@ -1,38 +1,31 @@
 <svelte:options accessors />
 
 <script>
-	import {filterProps} from './common'
-
-	export let btnNode = undefined
-	export let disabled = false
-
 	let className = ''
 	export {className as class}
-
-	const props = filterProps($$props, ['class', 'disabled'])
+	export let __node = undefined
 </script>
 
 <button
 	class="_tadashi_svelte_btn {className}"
-	bind:this={btnNode}
+	bind:this={__node}
 	on:click
-	{disabled}
-	{...props}
+	{...$$restProps}
 >
-	<span class="_tadashi_svelte_btn_slot_workaround">&#32;</span>
 	<slot />
-	<svg class="_tadashi_svelte_btn__ripple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><circle cx="300" cy="300" r="300" /></svg>
+	<svg class="_tadashi_svelte_btn__ripple" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+		<circle cx="300" cy="300" r="300" />
+	</svg>
 </button>
 
 <style>
 	:root {
-		--tadashi-svelte-btn-hue: 210;
-		--tadashi-svelte-btn-background-color: hsl(var(--tadashi-svelte-btn-hue), 50%, 50%);
+		--tadashi-svelte-btn-background-color: hsl(210, 50%, 50%);
 		--tadashi-svelte-btn-background-image: none;
 		--tadashi-svelte-btn-border: 0;
 		--tadashi-svelte-btn-border-radius: 0.15em;
 		--tadashi-svelte-btn-box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
-		--tadashi-svelte-btn-text-color: hsl(var(--tadashi-svelte-btn-hue), 100%, 100%);
+		--tadashi-svelte-btn-text-color: hsl(210, 100%, 100%);
 		--tadashi-svelte-btn-cursor: pointer;
 		--tadashi-svelte-btn-font-size: 1em;
 		--tadashi-svelte-btn-font-weight: 300;
@@ -41,7 +34,7 @@
 		--tadashi-svelte-btn-outline: 0;
 		--tadashi-svelte-btn-padding: 0 1em;
 		--tadashi-svelte-btn-disabled: 0.3;
-		--tadashi-svelte-btn-ripple-color: hsl(var(--tadashi-svelte-btn-hue), 100%, 100%);
+		--tadashi-svelte-btn-ripple-color: hsl(210, 100%, 100%);
 		--tadashi-svelte-btn-ripple-duration: 0.4s;
 		--tadashi-svelte-btn-ripple-width: 100%;
 		--tadashi-svelte-btn-opacity-duration: 1s;
@@ -70,7 +63,8 @@
 		position: relative;
 	}
 
-	._tadashi_svelte_btn_slot_workaround {
+	._tadashi_svelte_btn:before {
+		content: ' ';
 		overflow: hidden;
 		width: 0px;
 	}
