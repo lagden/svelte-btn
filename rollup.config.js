@@ -11,11 +11,11 @@ export default {
 	input: 'src/index.svelte',
 	output: [
 		{
-			file: `dist/index.mjs`,
-			format: 'es'
+			file: `dist/index.js`,
+			format: 'esm'
 		},
 		{
-			file: `dist/index.js`,
+			file: `dist/index.umd.js`,
 			format:'umd',
 			name
 		}

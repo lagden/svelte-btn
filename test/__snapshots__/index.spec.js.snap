@@ -5,6 +5,7 @@ exports[`Btn should match snapshot 1`] = `
   <div>
     <button
       class="_tadashi_svelte_btn svelte-rgbdu8"
+      type="button"
     >
        
       <svg
@@ -29,6 +30,7 @@ exports[`Btn should match snapshot with slot 1`] = `
   <div>
     <button
       class="_tadashi_svelte_btn svelte-rgbdu8"
+      type="button"
     >
       xxx
        

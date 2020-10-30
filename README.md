@@ -22,14 +22,14 @@ $ npm i -S @tadashi/svelte-btn
 
 ## Usage
 
-You can see an example more complex here: https://svelte.dev/repl/f8ab96519a874208be8e3f6295d040b0?version=3.22.2
+You can see an example more complex here: https://svelte.dev/repl/f8ab96519a874208be8e3f6295d040b0?version=3.29.4
 
 ```html
 <script>
   import Btn from '@tadashi/svelte-btn'
 </script>
 
-<Btn type="button">Default</Btn>
+<Btn>Yes</Btn>
 ```
 
 

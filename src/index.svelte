@@ -3,13 +3,15 @@
 <script>
 	let className = ''
 	export {className as class}
-	export let __node = undefined
+	export let node = undefined
+
+	$$restProps.type = $$restProps?.type ?? 'button'
 </script>
 
 <button
 	class="_tadashi_svelte_btn {className}"
-	bind:this={__node}
 	on:click
+	bind:this={node}
 	{...$$restProps}
 >
 	<slot />
