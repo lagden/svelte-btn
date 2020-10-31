@@ -2,4 +2,4 @@
 	import Btn from '../src/index.svelte'
 </script>
 
-<Btn>xxx</Btn>
+<Btn type="button" class="xxx">xxx</Btn>

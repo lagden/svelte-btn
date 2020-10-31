@@ -12,12 +12,7 @@ export default {
 	output: [
 		{
 			file: `dist/index.js`,
-			format: 'esm'
-		},
-		{
-			file: `dist/index.umd.js`,
-			format:'umd',
-			name
+			format: 'es'
 		}
 	],
 	plugins: [
