@@ -27,7 +27,7 @@
     "rm": "rm -rf dist",
     "rollup": "rollup -c",
     "build": "run-s test rm rollup",
-    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "test": "jest test",
     "test:watch": "npm run test -- --watch"
   },
