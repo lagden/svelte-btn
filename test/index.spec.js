@@ -1,15 +1,11 @@
+/* globals describe, afterEach, test, expect */
+
 import {cleanup, render} from '@testing-library/svelte'
-import Btn from '../src/index.svelte'
+import {Btn} from '../src'
 import Slot from './Slot.svelte'
 
 describe('Btn', () => {
 	afterEach(cleanup)
-
-	test('find svg ripple', () => {
-		const {getByText} = render(Btn)
-		const svg = document.querySelector('svg')
-		expect(svg).not.toBeNull()
-	})
 
 	test('should match snapshot default', () => {
 		const {container} = render(Btn)

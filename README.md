@@ -26,7 +26,7 @@ You can see an example more complex here: https://svelte.dev/repl/f8ab96519a8742
 
 ```html
 <script>
-  import Btn from '@tadashi/svelte-btn'
+  import {Btn} from '@tadashi/svelte-btn'
 </script>
 
 <Btn>Yes</Btn>

@@ -4,23 +4,9 @@ exports[`Btn should match snapshot default 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn svelte-rgbdu8"
+      class="_tadashi_svelte_btn svelte-kcleud"
       type="button"
-    >
-       
-      <svg
-        class="_tadashi_svelte_btn__ripple svelte-rgbdu8"
-        viewBox="0 0 600 600"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          class="svelte-rgbdu8"
-          cx="300"
-          cy="300"
-          r="300"
-        />
-      </svg>
-    </button>
+    />
   </div>
 </body>
 `;
@@ -29,24 +15,10 @@ exports[`Btn should match snapshot props 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn customCss svelte-rgbdu8"
+      class="_tadashi_svelte_btn customCss svelte-kcleud"
       disabled=""
       type="submit"
-    >
-       
-      <svg
-        class="_tadashi_svelte_btn__ripple svelte-rgbdu8"
-        viewBox="0 0 600 600"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          class="svelte-rgbdu8"
-          cx="300"
-          cy="300"
-          r="300"
-        />
-      </svg>
-    </button>
+    />
   </div>
 </body>
 `;
@@ -55,23 +27,10 @@ exports[`Btn should match snapshot with slot 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn xxx svelte-rgbdu8"
+      class="_tadashi_svelte_btn xxx svelte-kcleud"
       type="button"
     >
       xxx
-       
-      <svg
-        class="_tadashi_svelte_btn__ripple svelte-rgbdu8"
-        viewBox="0 0 600 600"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          class="svelte-rgbdu8"
-          cx="300"
-          cy="300"
-          r="300"
-        />
-      </svg>
     </button>
   </div>
 </body>
