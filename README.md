@@ -6,8 +6,8 @@
 
 [npm-img]:         https://img.shields.io/npm/v/@tadashi/svelte-btn.svg
 [npm]:             https://www.npmjs.com/package/@tadashi/svelte-btn
-[ci-img]:          https://travis-ci.org/lagden/svelte-btn.svg
-[ci]:              https://travis-ci.org/lagden/svelte-btn
+[ci-img]:          https://github.com/lagden/svelte-btn/workflows/Node.js%20CI/badge.svg
+[ci]:              https://github.com/lagden/svelte-btn/actions?query=workflow%3A%22Node.js+CI%22
 
 ---
 
