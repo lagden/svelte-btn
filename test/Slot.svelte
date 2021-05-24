@@ -1,5 +1,8 @@
 <script>
-	import {Btn} from '../src'
+	import {Btn} from '../src/btn.js'
 </script>
 
-<Btn type="button" class="xxx">xxx</Btn>
+<Btn
+	disabled={true}
+	required={false}
+>Test <b>bold</b></Btn>

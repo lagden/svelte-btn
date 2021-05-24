@@ -1,27 +1,29 @@
 import resolve from '@rollup/plugin-node-resolve'
 import svelte from 'rollup-plugin-svelte'
-import pkg from './package.json'
 
-const name = pkg.name
-	.replace(/^(@\S+\/)?(svelte-)?(\S+)/, '$3')
-	.replace(/^\w/, m => m.toUpperCase())
-	.replace(/-\w/g, m => m[1].toUpperCase())
+const ignoreWarnings = new Set([
+	'css-unused-selector'
+])
 
 export default {
-	input: 'src/index.js',
+	input: 'src/btn.js',
 	output: [
 		{
-			file: 'dist/index.js',
+			file: 'dist/btn.js',
 			format: 'es'
-		},
-		{
-			name,
-			file: 'dist/index.umd.js',
-			format: 'umd'
 		}
 	],
 	plugins: [
-		svelte({emitCss: false}),
+		svelte({
+			emitCss: false,
+			onwarn(warning, handler) {
+				// console.log('warning.code', warning.code)
+				if (ignoreWarnings.has(warning.code)) {
+					return
+				}
+				handler(warning)
+			}
+		}),
 		resolve({browser: true})
 	]
 }
