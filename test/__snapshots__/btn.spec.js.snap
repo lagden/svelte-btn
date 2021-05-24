@@ -4,7 +4,7 @@ exports[`Btn should match snapshot default 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn svelte-13e8aum"
+      class="_tadashi_svelte_btn svelte-qegufc"
       type="button"
     />
   </div>
@@ -15,7 +15,7 @@ exports[`Btn should match snapshot props 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn customCss svelte-13e8aum"
+      class="_tadashi_svelte_btn customCss svelte-qegufc"
       data-test="1"
       required="true"
       type="submit"
@@ -28,7 +28,7 @@ exports[`Btn should match snapshot with slot 1`] = `
 <body>
   <div>
     <button
-      class="_tadashi_svelte_btn svelte-13e8aum"
+      class="_tadashi_svelte_btn svelte-qegufc"
       disabled=""
       required="false"
       type="button"
