@@ -70,6 +70,13 @@
 		opacity: var(--tadashi_svelte_btn___disabled_opacity);
 	}
 
+	._tadashi_svelte_btn:not(:disabled):hover {
+		background-color: var(--tadashi_svelte_btn___not_disabled___hover_background_color, var(--tadashi_svelte_btn___not_disabled___active_background_color));
+		border: var(--tadashi_svelte_btn___not_disabled___hover_border, var(--tadashi_svelte_btn___not_disabled___active_border));
+		box-shadow: var(--tadashi_svelte_btn___not_disabled___hover_box_shadow, var(--tadashi_svelte_btn___not_disabled___active_box_shadow));
+		color: var(--tadashi_svelte_btn___not_disabled___hover_color, var(--tadashi_svelte_btn___not_disabled___active_color));
+	}
+
 	._tadashi_svelte_btn:not(:disabled):active {
 		background-color: var(--tadashi_svelte_btn___not_disabled___active_background_color);
 		border: var(--tadashi_svelte_btn___not_disabled___active_border);

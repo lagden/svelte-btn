@@ -1,4 +1,8 @@
-const ignoreWarnings = new Set(['a11y-no-onchange', 'a11y-label-has-associated-control'])
+const ignoreWarnings = new Set([
+	'a11y-no-onchange',
+	'a11y-label-has-associated-control',
+	'missing-custom-element-compile-options'
+])
 
 module.exports = {
 	env: {
@@ -6,7 +10,7 @@ module.exports = {
 		node: true,
 		browser: true
 	},
-	parser: "@babel/eslint-parser",
+	parser: '@babel/eslint-parser',
 	parserOptions: {
 		ecmaVersion: 12,
 		sourceType: 'module'
@@ -33,15 +37,18 @@ module.exports = {
 		],
 		'no-console': 0,
 		'no-debugger': 0,
-		'no-unused-expressions': [
-			'error',
-			{allowShortCircuit: true, allowTernary: true}
-		],
+		'no-unused-expressions': 0,
+		// 'no-unused-expressions': [
+		// 	'error',
+		// 	{allowShortCircuit: true, allowTernary: true}
+		// ],
 		camelcase: 0,
 		'capitalized-comments': 0,
 		'spaced-comment': 0,
 		'padding-line-between-statements': 0,
 		'no-undef-init': 0,
+		'no-template-curly-in-string': 0,
+		'no-sequences': 0,
 		'unicorn/filename-case': 0,
 		'unicorn/prevent-abbreviations': 0,
 		'unicorn/no-reduce': 0,
