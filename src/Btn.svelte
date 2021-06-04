@@ -33,21 +33,27 @@
 
 		--tadashi_svelte_btn___disabled_opacity: 0.5;
 
+		/*--tadashi_svelte_btn___not_disabled___hover_background_color: hsl(210deg 50% 60%);*/
+		/*--tadashi_svelte_btn___not_disabled___hover_border: var(--tadashi_svelte_btn_border);*/
+		/*--tadashi_svelte_btn___not_disabled___hover_box_shadow: none;*/
+		/*--tadashi_svelte_btn___not_disabled___hover_color: hsl(0deg 0% 100%);*/
+		/*--tadashi_svelte_btn___not_disabled___hover_filter: hsl(0deg 0% 100%);*/
+
 		--tadashi_svelte_btn___not_disabled___active_background_color: hsl(210deg 50% 50%);
 		--tadashi_svelte_btn___not_disabled___active_border: none;
 		--tadashi_svelte_btn___not_disabled___active_box_shadow: none;
-		--tadashi_svelte_btn___not_disabled___active_color: hsl(0deg 0% 100%);
+		--tadashi_svelte_btn___not_disabled___active_color: hsl(0deg 0% 90%);
 		--tadashi_svelte_btn___not_disabled___active_filter: brightness(1.3);
 	}
 
 	._tadashi_svelte_btn {
 		align-items: var(--tadashi_svelte_btn_align_items);
-		background-color: var(--tadashi_svelte_btn_background_color, var(--tadashi_svelte_btn___not_disabled___active_background_color));
-		border: var(--tadashi_svelte_btn_border, var(--tadashi_svelte_btn___not_disabled___active_border));
+		background-color: var(--tadashi_svelte_btn_background_color, var(--tadashi_svelte_btn___not_disabled___hover_background_color, var(--tadashi_svelte_btn___not_disabled___active_background_color)));
+		border: var(--tadashi_svelte_btn_border, var(--tadashi_svelte_btn___not_disabled___hover_border, var(--tadashi_svelte_btn___not_disabled___active_border)));
 		border-radius: var(--tadashi_svelte_btn_border_radius);
-		box-shadow: var(--tadashi_svelte_btn_box_shadow, var(--tadashi_svelte_btn___not_disabled___active_box_shadow));
+		box-shadow: var(--tadashi_svelte_btn_box_shadow, var(--tadashi_svelte_btn___not_disabled___hover_box_shadow, var(--tadashi_svelte_btn___not_disabled___active_box_shadow)));
 		box-sizing: border-box;
-		color: var(--tadashi_svelte_btn_color, var(--tadashi_svelte_btn___not_disabled___active_color));
+		color: var(--tadashi_svelte_btn_color, var(--tadashi_svelte_btn___not_disabled___hover_color, var(--tadashi_svelte_btn___not_disabled___active_color)));
 		cursor: var(--tadashi_svelte_btn_cursor);
 		font-size: var(--tadashi_svelte_btn_font_size);
 		font-weight: var(--tadashi_svelte_btn_font_weight);
@@ -70,11 +76,20 @@
 		opacity: var(--tadashi_svelte_btn___disabled_opacity);
 	}
 
+	._tadashi_svelte_btn:not(:disabled):hover,
+	._tadashi_svelte_btn:not(:disabled):focus {
+		background-color: var(--tadashi_svelte_btn___not_disabled___hover_background_color, var(--tadashi_svelte_btn___not_disabled___active_background_color));
+		border: var(--tadashi_svelte_btn___not_disabled___hover_border, var(--tadashi_svelte_btn___not_disabled___active_border));
+		box-shadow: var(--tadashi_svelte_btn___not_disabled___hover_box_shadow, var(--tadashi_svelte_btn___not_disabled___active_box_shadow));
+		color: var(--tadashi_svelte_btn___not_disabled___hover_color, var(--tadashi_svelte_btn___not_disabled___active_color));
+		filter: var(--tadashi_svelte_btn___not_disabled___hover_filter, var(--tadashi_svelte_btn___not_disabled___active_filter));
+	}
+
 	._tadashi_svelte_btn:not(:disabled):active {
-		background-color: var(--tadashi_svelte_btn___not_disabled___active_background_color);
-		border: var(--tadashi_svelte_btn___not_disabled___active_border);
-		box-shadow: var(--tadashi_svelte_btn___not_disabled___active_box_shadow);
-		color: var(--tadashi_svelte_btn___not_disabled___active_color);
+		background-color: var(--tadashi_svelte_btn___not_disabled___hover_background_color, var(--tadashi_svelte_btn___not_disabled___active_background_color));
+		border: var(--tadashi_svelte_btn___not_disabled___hover_border, var(--tadashi_svelte_btn___not_disabled___active_border));
+		box-shadow: var(--tadashi_svelte_btn___not_disabled___hover_box_shadow, var(--tadashi_svelte_btn___not_disabled___active_box_shadow));
+		color: var(--tadashi_svelte_btn___not_disabled___hover_color, var(--tadashi_svelte_btn___not_disabled___active_color));
 		filter: var(--tadashi_svelte_btn___not_disabled___active_filter);
 	}
 </style>
