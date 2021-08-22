@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/svelte-btn",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "repository": "github:lagden/svelte-btn",
   "description": "Svelte component",
   "keywords": [
@@ -28,28 +28,28 @@
     "build": "run-s test rm rollup",
     "prepublishOnly": "npm run build",
     "pretest": "npm run eslint",
-    "test": "jest test --coverage --coverageReporters=lcov --coverageReporters=text",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest test --coverage --coverageReporters=lcov --coverageReporters=text",
     "test:watch": "npm test -- --watch"
   },
   "devDependencies": {
-    "@babel/core": "7.14.3",
-    "@babel/eslint-parser": "7.14.4",
-    "@babel/plugin-syntax-top-level-await": "7.12.13",
-    "@babel/preset-env": "7.14.4",
-    "@rollup/plugin-node-resolve": "13.0.0",
+    "@babel/core": "7.15.0",
+    "@babel/eslint-parser": "7.15.0",
+    "@babel/plugin-syntax-top-level-await": "7.14.5",
+    "@babel/preset-env": "7.15.0",
+    "@rollup/plugin-node-resolve": "13.0.4",
     "@testing-library/svelte": "3.0.3",
-    "babel-jest": "27.0.2",
-    "eslint": "7.28.0",
-    "eslint-config-xo": "0.36.0",
+    "babel-jest": "27.0.6",
+    "eslint": "7.32.0",
+    "eslint-config-xo": "0.38.0",
     "eslint-plugin-html": "6.1.2",
     "eslint-plugin-svelte3": "3.2.0",
-    "eslint-plugin-unicorn": "33.0.1",
-    "jest": "27.0.4",
+    "eslint-plugin-unicorn": "35.0.0",
+    "jest": "27.0.6",
     "npm-run-all": "4.1.5",
-    "rollup": "2.50.6",
+    "rollup": "2.56.2",
     "rollup-plugin-svelte": "7.1.0",
-    "svelte": "3.38.2",
-    "svelte-jester": "1.7.0"
+    "svelte": "3.42.2",
+    "svelte-jester": "2.0.1"
   },
   "babel": {
     "presets": [

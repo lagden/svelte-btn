@@ -2,16 +2,21 @@ import resolve from '@rollup/plugin-node-resolve'
 import svelte from 'rollup-plugin-svelte'
 
 const ignoreWarnings = new Set([
-	'css-unused-selector'
+	'css-unused-selector',
+	'a11y-no-onchange',
+	'a11y-label-has-associated-control',
+	'missing-declaration',
 ])
 
 export default {
 	input: 'src/btn.js',
 	output: [
 		{
-			file: 'dist/btn.js',
-			format: 'es'
-		}
+			format: 'es',
+			entryFileNames: 'btn.js',
+			dir: 'dist',
+			sourcemap: true,
+		},
 	],
 	plugins: [
 		svelte({
@@ -22,8 +27,11 @@ export default {
 					return
 				}
 				handler(warning)
-			}
+			},
 		}),
-		resolve({browser: true})
-	]
+		resolve({browser: true}),
+	],
+	watch: {
+		clearScreen: false,
+	},
 }

@@ -1,5 +1,6 @@
-/* globals jest, describe, afterEach, test, expect */
+/* globals describe, afterEach, test, expect */
 
+import {jest} from '@jest/globals'
 import {cleanup, render, fireEvent} from '@testing-library/svelte'
 import {Btn} from '../src/btn.js'
 import Slot from './Slot.svelte'
@@ -19,8 +20,10 @@ describe('Btn', () => {
 				class: 'customCss',
 				required: true,
 				disabled: false,
-				'data-test': 1
-			}
+				useDefaultFX: true,
+				useOutline: true,
+				'data-test': 1,
+			},
 		})
 		expect(container).toMatchSnapshot()
 	})
@@ -28,8 +31,8 @@ describe('Btn', () => {
 	test('events should work', async () => {
 		const {component, getByTitle} = render(Btn, {
 			props: {
-				title: 'btn'
-			}
+				title: 'btn',
+			},
 		})
 
 		const mock = jest.fn()
