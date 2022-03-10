@@ -38,6 +38,16 @@
 		--tadashi_svelte_btn_transition_duration: 0.5s;
 
 		--tadashi_svelte_btn___disabled_opacity: 0.5;
+
+		--tadashi_svelte_btn__outline_background_color: hsl(0deg 0% 100%);
+		--tadashi_svelte_btn__outline_color: hsl(240deg 9% 44%);
+		--tadashi_svelte_btn__outline_border: 1px solid hsl(240deg 17% 88%);
+		--tadashi_svelte_btn__outline_box_shadow: 0px 3px 0px 0px hsl(240deg 17% 88%);
+		--tadashi_svelte_btn__outline___not_disabled___focus_background_color: hsl(240deg 17% 88% / 30%);
+		--tadashi_svelte_btn__outline___not_disabled___hover_background_color: hsl(240deg 17% 88% / 30%);
+		--tadashi_svelte_btn__outline___not_disabled___active_box_shadow: 0px 0px 0px 0px hsl(240deg 17% 88%);
+		--tadashi_svelte_btn__outline___not_disabled___active_transform: translateY(3px);
+
 	}
 
 	._tadashi_svelte_btn {
@@ -103,19 +113,19 @@
 	}
 
 	._tadashi_svelte_btn___default_fx {
-		--tadashi_svelte_btn___not_disabled___focus_filter: brightness(1.3);
-		--tadashi_svelte_btn___not_disabled___hover_filter: brightness(1.3);
-		--tadashi_svelte_btn___not_disabled___active_filter: brightness(1.5);
+		--tadashi_svelte_btn___not_disabled___focus_filter: var(--tadashi_svelte_btn__fx___not_disabled___focus_filter, brightness(1.3));
+		--tadashi_svelte_btn___not_disabled___hover_filter: var(--tadashi_svelte_btn__fx___not_disabled___hover_filter, brightness(1.3));
+		--tadashi_svelte_btn___not_disabled___active_filter: var(--tadashi_svelte_btn__fx___not_disabled___active_filter, brightness(1.5));
 	}
 
 	._tadashi_svelte_btn___outline {
-		--tadashi_svelte_btn_background_color: hsl(0deg 0% 100%);
-		--tadashi_svelte_btn_color: hsl(240deg 9% 44%);
-		--tadashi_svelte_btn_border: 1px solid hsl(240deg 17% 88%);
-		--tadashi_svelte_btn_box_shadow: 0px 3px 0px 0px hsl(240deg 17% 88%);
-		--tadashi_svelte_btn___not_disabled___focus_background_color: hsl(240deg 17% 88% / 30%);
-		--tadashi_svelte_btn___not_disabled___hover_background_color: hsl(240deg 17% 88% / 30%);
-		--tadashi_svelte_btn___not_disabled___active_box_shadow: 0px 0px 0px 0px hsl(240deg 17% 88%);
-		--tadashi_svelte_btn___not_disabled___active_transform: translateY(3px);
+		--tadashi_svelte_btn_background_color: var(--tadashi_svelte_btn__outline_background_color);
+		--tadashi_svelte_btn_color: var(--tadashi_svelte_btn__outline_color);
+		--tadashi_svelte_btn_border: var(--tadashi_svelte_btn__outline_border);
+		--tadashi_svelte_btn_box_shadow: var(--tadashi_svelte_btn__outline_box_shadow);
+		--tadashi_svelte_btn___not_disabled___focus_background_color: var(--tadashi_svelte_btn__outline___not_disabled___focus_background_color);
+		--tadashi_svelte_btn___not_disabled___hover_background_color: var(--tadashi_svelte_btn__outline___not_disabled___hover_background_color);
+		--tadashi_svelte_btn___not_disabled___active_box_shadow: var(--tadashi_svelte_btn__outline___not_disabled___active_box_shadow);
+		--tadashi_svelte_btn___not_disabled___active_transform: var(--tadashi_svelte_btn__outline___not_disabled___active_transform);
 	}
 </style>

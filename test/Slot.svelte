@@ -1,5 +1,5 @@
 <script>
-	import {Btn} from '../src/btn.js'
+	import Btn from '../src/btn.js'
 </script>
 
 <Btn

@@ -6,6 +6,7 @@ export default {
 		'^.+\\.svelte$': ['svelte-jester', {preprocess: false}],
 	},
 	testEnvironment: 'jsdom',
+	moduleNameMapper: {},
 	bail: false,
 	verbose: true,
 }

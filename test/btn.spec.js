@@ -1,9 +1,19 @@
-/* globals describe, afterEach, test, expect */
+/* globals describe, afterEach, beforeAll, afterAll, test, expect */
 
+import timekeeper from 'timekeeper'
 import {jest} from '@jest/globals'
 import {cleanup, render, fireEvent} from '@testing-library/svelte'
-import {Btn} from '../src/btn.js'
+import Btn from '../src/btn.js'
 import Slot from './Slot.svelte'
+
+beforeAll(() => {
+	// Para o tempo
+	timekeeper.freeze(1_604_416_038 * 1000)
+})
+
+afterAll(() => {
+	timekeeper.reset()
+})
 
 describe('Btn', () => {
 	afterEach(cleanup)
