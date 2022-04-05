@@ -30,8 +30,6 @@ describe('Btn', () => {
 				class: 'customCss',
 				required: true,
 				disabled: false,
-				useDefaultFX: true,
-				useOutline: true,
 				'data-test': 1,
 			},
 		})
