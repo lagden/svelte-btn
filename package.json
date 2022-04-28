@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/svelte-btn",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "repository": "github:lagden/svelte-btn",
   "description": "Svelte component",
   "keywords": [

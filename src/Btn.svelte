@@ -31,6 +31,7 @@
 	*/
 
 	._tadashi_svelte_btn {
+		--tadashi_svelte_icon_fill: var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_secondary, hsl(0deg 0% 100%)));
 		align-items: var(--tadashi_svelte_btn_align_items, center);
 		background-color: var(--tadashi_svelte_btn_background_color, var(--tadashi_svelte_btn_common_primary, hsl(0deg 0% 0%)));
 		border: var(--tadashi_svelte_btn_border, 1px solid var(--tadashi_svelte_btn_common_tertiary, hsl(0deg 0% 40%)));
@@ -38,7 +39,6 @@
 		box-shadow: var(--tadashi_svelte_btn_box_shadow, 0px 3px 0px 0px var(--tadashi_svelte_btn_common_quaternary, hsl(0deg 0% 40%)));
 		box-sizing: border-box;
 		color: var(--tadashi_svelte_btn_color, var(--tadashi_svelte_btn_common_secondary, hsl(0deg 0% 100%)));
-		fill: var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_secondary, hsl(0deg 0% 100%)));
 		cursor: var(--tadashi_svelte_btn_cursor, pointer);
 		filter: var(--tadashi_svelte_btn_filter, none);
 		font-size: var(--tadashi_svelte_btn_font_size, 1em);
@@ -67,31 +67,31 @@
 	}
 
 	._tadashi_svelte_btn:not(:disabled):focus {
+		--tadashi_svelte_icon_fill: var(--tadashi_svelte_btn___not_disabled___focus_fill, var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
 		background-color: var(--tadashi_svelte_btn___not_disabled___focus_background_color, var(--tadashi_svelte_btn_common_quinary, hsl(0deg 0% 100%)));
 		border: var(--tadashi_svelte_btn___not_disabled___focus_border, var(--tadashi_svelte_btn_border, 1px solid var(--tadashi_svelte_btn_common_tertiary, hsl(0deg 0% 40%))));
 		box-shadow: var(--tadashi_svelte_btn___not_disabled___focus_box_shadow, var(--tadashi_svelte_btn_box_shadow, 0px 3px 0px 0px var(--tadashi_svelte_btn_common_quaternary, hsl(0deg 0% 40%))));
 		color: var(--tadashi_svelte_btn___not_disabled___focus_color, var(--tadashi_svelte_btn_color, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
-		fill: var(--tadashi_svelte_btn___not_disabled___focus_fill, var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
 		filter: var(--tadashi_svelte_btn___not_disabled___focus_filter, var(--tadashi_svelte_btn_filter, none));
 		transform: var(--tadashi_svelte_btn___not_disabled___focus_transform, var(--tadashi_svelte_btn_transform, none));
 	}
 
 	._tadashi_svelte_btn:not(:disabled):hover {
+		--tadashi_svelte_icon_fill: var(--tadashi_svelte_btn___not_disabled___hover_fill, var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
 		background-color: var(--tadashi_svelte_btn___not_disabled___hover_background_color, var(--tadashi_svelte_btn_common_quinary, hsl(0deg 0% 100%)));
 		border: var(--tadashi_svelte_btn___not_disabled___hover_border, var(--tadashi_svelte_btn_border, 1px solid var(--tadashi_svelte_btn_common_tertiary, hsl(0deg 0% 40%))));
 		box-shadow: var(--tadashi_svelte_btn___not_disabled___hover_box_shadow, var(--tadashi_svelte_btn_box_shadow, 0px 3px 0px 0px var(--tadashi_svelte_btn_common_quaternary, hsl(0deg 0% 40%))));
 		color: var(--tadashi_svelte_btn___not_disabled___hover_color, var(--tadashi_svelte_btn_color, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
-		fill: var(--tadashi_svelte_btn___not_disabled___hover_fill, var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
 		filter: var(--tadashi_svelte_btn___not_disabled___hover_filter, var(--tadashi_svelte_btn_filter, none));
 		transform: var(--tadashi_svelte_btn___not_disabled___hover_transform, var(--tadashi_svelte_btn_transform, none));
 	}
 
 	._tadashi_svelte_btn:not(:disabled):active {
+		--tadashi_svelte_icon_fill: var(--tadashi_svelte_btn___not_disabled___active_fill, var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
 		background-color: var(--tadashi_svelte_btn___not_disabled___active_background_color, var(--tadashi_svelte_btn_common_quinary, hsl(0deg 0% 100%)));
 		border: var(--tadashi_svelte_btn___not_disabled___hover_border, var(--tadashi_svelte_btn_border, 1px solid var(--tadashi_svelte_btn_common_tertiary, hsl(0deg 0% 40%))));
 		box-shadow: var(--tadashi_svelte_btn___not_disabled___hover_box_shadow, var(--tadashi_svelte_btn_box_shadow, 0px 0px 0px 0px var(--tadashi_svelte_btn_common_quaternary, hsl(0deg 0% 40%))));
 		color: var(--tadashi_svelte_btn___not_disabled___active_color, var(--tadashi_svelte_btn_color, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
-		fill: var(--tadashi_svelte_btn___not_disabled___active_fill, var(--tadashi_svelte_btn_fill, var(--tadashi_svelte_btn_common_senary, hsl(0deg 0% 0%))));
 		filter: var(--tadashi_svelte_btn___not_disabled___active_filter, var(--tadashi_svelte_btn_filter, none));
 		transform: var(--tadashi_svelte_btn___not_disabled___active_transform, translateY(3px));
 	}
