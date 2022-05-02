@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/svelte-btn",
-  "version": "6.1.1",
+  "version": "6.2.0",
   "repository": "github:lagden/svelte-btn",
   "description": "Svelte component",
   "keywords": [
@@ -32,21 +32,22 @@
     "test:watch": "npm test -- --watch"
   },
   "devDependencies": {
-    "@babel/core": "7.17.8",
+    "@babel/core": "7.17.10",
     "@babel/eslint-parser": "7.17.0",
-    "@babel/preset-env": "7.16.11",
-    "@testing-library/svelte": "3.1.0",
-    "babel-jest": "27.5.1",
-    "esbuild": "0.14.31",
+    "@babel/preset-env": "7.17.10",
+    "@testing-library/svelte": "3.1.1",
+    "babel-jest": "28.0.3",
+    "esbuild": "0.14.38",
     "esbuild-svelte": "0.7.0",
-    "eslint": "8.12.0",
+    "eslint": "8.14.0",
     "eslint-config-xo": "0.40.0",
     "eslint-plugin-html": "6.2.0",
     "eslint-plugin-svelte3": "3.4.1",
     "eslint-plugin-unicorn": "42.0.0",
-    "jest": "27.5.1",
+    "jest": "28.0.3",
+    "jest-environment-jsdom": "28.0.2",
     "npm-run-all": "4.1.5",
-    "svelte": "3.46.6",
+    "svelte": "3.48.0",
     "svelte-jester": "2.3.2",
     "timekeeper": "2.2.0"
   },
