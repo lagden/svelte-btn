@@ -68,6 +68,7 @@
 		flex-direction: var(--tadashi_svelte_btn_flex_direction, row);
 		gap: var(--tadashi_svelte_btn_gap, 3px);
 		align-items: var(--tadashi_svelte_btn_align_items, center);
+		justify-content: var(--tadashi_svelte_btn_justify_content, center);
 	}
 
 	._tadashi_svelte_btn:disabled {
